@@ -13,3 +13,22 @@ $color-grey-dark-2: #6d5d4b;
 //FONT VARIABLES
 $font-primary: "Nunito", sans-serif;
 $font-display: "Josefin Sans", sans-serif;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // (browser default 16px) 16px/10px = 62.5% -> 1rem = 10px : makes rem math easier later
+}
+
+body {
+  font-family: $font-primary;
+  color: $color-grey-dark-2;
+  font-weight: 300;
+}
